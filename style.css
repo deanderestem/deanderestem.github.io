@@ -22,6 +22,12 @@ nav{
     display: flex;
     overflow: hidden;
 }
+nav h2{
+    max-width: 50%;
+    font-size: 1.5em;
+    color: #fff;
+    margin-left: 10%;
+}
 nav img{
     height: 80px;
     width: 87.5px;
@@ -251,8 +257,9 @@ footer a{
 }
 .icon{
     position: absolute;
-    top: 40px;
-    right: 50px;
+    top: 30px;
+    right: 10%;
+    font-size: 2.5em;
 }
 @media only screen and (min-width: 1025px) {
     .topnav a {
@@ -276,4 +283,7 @@ footer a{
     .blocks article p{
         margin: 5%;
     }
+    nav h2{
+    font-size: 2em;
+}
 }
