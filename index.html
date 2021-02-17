@@ -6,6 +6,16 @@
         <link rel="icon" 
               type="image/icon" 
               href="favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            function myFunction() {
+                var x = document.getElementById("nav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }</script>
     </head>
     <body>
         <main>  
@@ -13,11 +23,14 @@
                 <nav>
                     <img src="images/logo.png">
                     <h2 style="color: #fff;margin-left: 2%;font-size: 2em;">De Andere Stem.</h2>
-                    <ul>
+                    <ul class="topnav" id="nav">
                         <a href="index.html"><li>Home</li></a>
                         <a href="verkiezingsprogramma.html"><li>Verkiezingsprogramma</li></a>
                         <a href="onzemensen.html"><li>Onze mensen</li></a>
                     </ul>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
                 </nav>
             </header>
             <section class="banner">

@@ -57,6 +57,9 @@ nav ul li:hover{
     color: #3baa36;
     transition-duration: 0.3s;
 }
+.topnav a {
+    display: none;
+}
 .banner{
     display: flex;
     color: #fff;
@@ -232,7 +235,32 @@ footer{
 footer a{
     color: #3baa36;
 }
+.responsive{
+    position: absolute;
+    background-color: #3baa36;
+    top: 100px;
+    height: auto;
+    width: 100%;
+    display: block;
+    z-index: 100;
+    font-size: 1.3em;
+}
+.responsive a{
+    display: inline-block;
+    width: 100%;
+}
+.icon{
+    position: absolute;
+    top: 40px;
+    right: 50px;
+}
 @media only screen and (min-width: 1025px) {
+    .topnav a {
+        display: block;
+    }
+    .icon {
+        display: none;
+    }
     .content, .blocks, .goals{
         width: 75%;
     }
